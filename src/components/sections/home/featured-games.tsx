@@ -82,9 +82,11 @@ export interface Game {
   };
   tabSections?: Array<{
     title: string;
-    contentKey: keyof Game | 'media_plus_description' | string;
+    contentKey: keyof Game | 'media_plus_description' | 'editions_content' | 'key_features_tab_content' | 'system_requirements_content' | string;
   }>;
   editions?: Edition[];
+  system_requirements_content?: string;
+  key_features_tab_content?: string;
 }
 
 
@@ -149,6 +151,10 @@ export default function FeaturedGames({ showAllGames = false }: FeaturedGamesPro
           throw new Error(`Failed to fetch games: ${response.status}`);
         }
         const jsonData: Game[] = await response.json();
+        if (!Array.isArray(jsonData)) {
+          console.error("Fetched game data is not an array:", jsonData);
+          throw new Error("Game data is not in the expected format (array).");
+        }
         setAllGamesData(jsonData);
 
         if (!showAllGames) {
@@ -278,3 +284,4 @@ export default function FeaturedGames({ showAllGames = false }: FeaturedGamesPro
     </AnimateOnScroll>
   );
 }
+

@@ -12,7 +12,7 @@ import AnimateOnScroll from '@/components/motion/animate-on-scroll';
 import { GameCard, type Game, type MediaItem, type Edition, type EditionItem } from '@/components/sections/home/featured-games';
 import {
   ChevronLeft, ChevronRight, Star, ListChecks, Gamepad2, CalendarDays, Film,
-  GalleryHorizontal, Tag, Heart, DownloadCloud, Info, HelpCircle, Trophy, Play, PlusCircle
+  GalleryHorizontal, Tag, Heart, DownloadCloud, Info, HelpCircle, Trophy, Play, PlusCircle, FileText, Cpu, FlaskConical, Users
 } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from '@/components/ui/separator';
@@ -26,7 +26,8 @@ async function getGameById(id: string): Promise<Game | undefined> {
       console.error(`Failed to fetch games.json: ${response.status}`);
       return undefined;
     }
-    const games: Game[] = await response.json();
+    const gamesData: Game[] | Game = await response.json();
+    const games = Array.isArray(gamesData) ? gamesData : [gamesData]; // Ensure it's an array
     return games.find(game => game.id === id);
   } catch (error) {
     console.error("Error fetching or parsing games.json:", error);
@@ -41,7 +42,8 @@ async function getOtherGames(currentId: string, count: number = 4): Promise<Game
       console.error(`Failed to fetch games.json for other games: ${response.status}`);
       return [];
     }
-    const games: Game[] = await response.json();
+    const gamesData: Game[] | Game = await response.json();
+    const games = Array.isArray(gamesData) ? gamesData : [gamesData]; // Ensure it's an array
     return games.filter(game => game.id !== currentId).slice(0, count);
   } catch (error) {
     console.error("Error fetching or parsing games.json for other games:", error);
@@ -69,7 +71,7 @@ const RatingStars: React.FC<{ rating?: number; maxStars?: number }> = ({ rating 
 
 const CustomTag: React.FC<{ tag: NonNullable<Game["customTags"]>[0] }> = ({ tag }) => {
   const icons: { [key: string]: React.ElementType } = {
-    Gamepad2, ListChecks, Film, GalleryHorizontal, Tag, Trophy, DownloadCloud, HelpCircle, Info
+    Gamepad2, ListChecks, Film, GalleryHorizontal, Tag, Trophy, DownloadCloud, HelpCircle, Info, FlaskConical, Cpu, Users, FileText
   };
   const ActualIcon = tag.icon && icons[tag.icon] ? icons[tag.icon] : Info;
 
@@ -230,8 +232,8 @@ const GameEditionsSection: React.FC<GameEditionsSectionProps> = ({ editions }) =
         <Card
           key={edition.id}
           className={cn(
-            "flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-2xl", // Removed explicit transition, relies on Card component's default
-            edition.isHighlighted ? "bg-blue-900/30 border-blue-700 hover:border-blue-500" : "bg-card border-border" // Generic Card hover will apply for non-highlighted
+            "flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-2xl", 
+            edition.isHighlighted ? "bg-blue-900/30 border-blue-700 hover:border-blue-500" : "bg-card border-border"
           )}
         >
           {edition.isHighlighted && edition.highlightBannerText && (
@@ -314,8 +316,9 @@ const GameEditionsSection: React.FC<GameEditionsSectionProps> = ({ editions }) =
 
 function GameDetailPageContent({ game, otherGames }: { game: Game; otherGames: Game[] }) {
   const currencySymbol = game.priceDetails?.currencySymbol || '$';
-
   const defaultTab = game.tabSections?.[0]?.title.toLowerCase() || "overview";
+
+  const tabDefinitions = game.tabSections || [{ title: "Overview", contentKey: "media_plus_description" }];
 
   return (
     <div className="container mx-auto px-4 py-8 pt-24 md:pt-32">
@@ -341,62 +344,92 @@ function GameDetailPageContent({ game, otherGames }: { game: Game; otherGames: G
       <div className="grid lg:grid-cols-12 gap-8 md:gap-12">
         <div className="lg:col-span-8">
           <Tabs defaultValue={defaultTab} className="w-full">
-            <TabsList className="border-b border-border rounded-none p-0 bg-transparent mb-6 justify-start">
-              {(game.tabSections || [{ title: "Overview", contentKey: "media_plus_description" }]).map((tab) => (
+            <TabsList className="border-b border-border rounded-none p-0 bg-transparent mb-6 justify-start overflow-x-auto">
+              {tabDefinitions.map((tab) => (
                 <TabsTrigger
                   key={tab.title.toLowerCase()}
                   value={tab.title.toLowerCase()}
-                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:text-primary data-[state=active]:shadow-none rounded-none px-4 py-2 text-base text-muted-foreground hover:text-foreground transition-none"
+                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:text-primary data-[state=active]:shadow-none rounded-none px-4 py-2 text-base text-muted-foreground hover:text-foreground transition-none whitespace-nowrap"
                 >
                   {tab.title}
                 </TabsTrigger>
               ))}
             </TabsList>
 
-            <TabsContent value="overview">
-              <AnimateOnScroll animationClass="animate-fade-in-from-bottom" delay="delay-100ms" className="space-y-6">
-                {game.media && game.media.length > 0 && (
-                  <GameMediaViewer media={game.media} gameTitle={game.title} />
-                )}
-                {game.shortDescriptionUnderGallery && (
-                  <p className="text-lg text-foreground leading-relaxed mt-4">
-                    {game.shortDescriptionUnderGallery}
-                  </p>
-                )}
-                 {game.description && (
-                  <Card className="shadow-none border-none bg-transparent p-0 mt-4">
-                    <CardContent className="p-0">
-                      <p className="text-foreground/90 leading-relaxed whitespace-pre-line text-sm">
-                        {game.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                )}
-                {game.keyFeatures && game.keyFeatures.length > 0 && (
-                  <Card className="shadow-none border-none bg-transparent p-0 mt-6">
-                    <CardHeader className="p-0 mb-2">
-                      <CardTitle className="text-xl font-semibold text-primary flex items-center">
-                        <ListChecks className="mr-2 h-5 w-5" /> Key Features
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-0">
-                      <ul className="list-disc list-inside space-y-1.5 text-foreground/90 text-sm">
-                        {game.keyFeatures.map((feature, index) => (
-                          <li key={index}>{feature}</li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                )}
-              </AnimateOnScroll>
-            </TabsContent>
-            
-            {game.tabSections?.find(tab => tab.title.toLowerCase() === 'add-ons') && (
-                <TabsContent value="add-ons">
-                  <GameEditionsSection editions={game.editions} />
-                </TabsContent>
-            )}
-
+            {tabDefinitions.map((tab) => (
+              <TabsContent key={tab.title.toLowerCase()} value={tab.title.toLowerCase()}>
+                <AnimateOnScroll animationClass="animate-fade-in-from-bottom" delay="delay-100ms" className="space-y-6">
+                  {tab.contentKey === 'media_plus_description' && (
+                    <>
+                      {game.media && game.media.length > 0 && (
+                        <GameMediaViewer media={game.media} gameTitle={game.title} />
+                      )}
+                      {game.shortDescriptionUnderGallery && (
+                        <p className="text-lg text-foreground leading-relaxed mt-4">
+                          {game.shortDescriptionUnderGallery}
+                        </p>
+                      )}
+                       {game.description && (
+                        <Card className="shadow-none border-none bg-transparent p-0 mt-4">
+                          <CardContent className="p-0">
+                            <p className="text-foreground/90 leading-relaxed whitespace-pre-line text-sm">
+                              {game.description}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      )}
+                    </>
+                  )}
+                  {tab.contentKey === 'key_features_tab_content' && game.key_features_tab_content && (
+                     <Card className="shadow-none border-none bg-transparent p-0">
+                       <CardHeader className="p-0 mb-2">
+                          <CardTitle className="text-xl font-semibold text-primary flex items-center">
+                            <ListChecks className="mr-2 h-5 w-5" /> Key Features
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0">
+                          <p className="text-foreground/90 leading-relaxed whitespace-pre-line text-sm">
+                            {game.key_features_tab_content}
+                          </p>
+                        </CardContent>
+                      </Card>
+                  )}
+                   {tab.contentKey === 'key_features_tab_content' && game.keyFeatures && !game.key_features_tab_content && ( // Fallback if specific tab content is missing but old keyFeatures exists
+                     <Card className="shadow-none border-none bg-transparent p-0">
+                       <CardHeader className="p-0 mb-2">
+                          <CardTitle className="text-xl font-semibold text-primary flex items-center">
+                            <ListChecks className="mr-2 h-5 w-5" /> Key Features
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0">
+                          <ul className="list-disc list-inside space-y-1.5 text-foreground/90 text-sm">
+                            {game.keyFeatures.map((feature, index) => (
+                              <li key={index}>{feature}</li>
+                            ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                  )}
+                  {tab.contentKey === 'system_requirements_content' && game.system_requirements_content && (
+                    <Card className="shadow-none border-none bg-transparent p-0">
+                      <CardHeader className="p-0 mb-2">
+                        <CardTitle className="text-xl font-semibold text-primary flex items-center">
+                           <FileText className="mr-2 h-5 w-5" /> System Requirements
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="p-0">
+                        <p className="text-foreground/90 leading-relaxed whitespace-pre-line text-sm">
+                          {game.system_requirements_content}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  )}
+                  {tab.contentKey === 'editions_content' && (
+                    <GameEditionsSection editions={game.editions} />
+                  )}
+                </AnimateOnScroll>
+              </TabsContent>
+            ))}
           </Tabs>
         </div>
 
@@ -533,7 +566,7 @@ export default function GameDetailPage({ params: paramsPromise }: { params: Prom
 
 
 export function GameDetailPageLoadingFallback() {
-  const tabCount = 2; // Overview, Add-Ons
+  const tabCount = 3; // Example: Overview, System Req, Add-Ons
   return (
     <div className="container mx-auto px-4 py-8 pt-24 md:pt-32">
       <div className="mb-6">
@@ -551,7 +584,6 @@ export function GameDetailPageLoadingFallback() {
                  <Skeleton key={i} className="h-10 w-24" />
             ))}
           </div>
-          {/* Placeholder for TabsContent */}
           <div className="space-y-6">
             <Skeleton className="aspect-video w-full rounded-lg mb-4" />
             <div className="flex gap-2 mb-4">
@@ -567,7 +599,6 @@ export function GameDetailPageLoadingFallback() {
             <Skeleton className="h-4 w-full mb-1" />
             <Skeleton className="h-4 w-5/6" />
 
-            {/* Skeleton for Editions Section (assuming 2 cards for loading) */}
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
                 {[...Array(2)].map((_, i) => (
                   <Card key={i} className="flex flex-col">
@@ -622,3 +653,4 @@ export function GameDetailPageLoadingFallback() {
     </div>
   );
 }
+
