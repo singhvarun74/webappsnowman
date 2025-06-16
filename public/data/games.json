@@ -1,222 +1,129 @@
-
-[
-  {
-    "id": "1",
-    "title": "Ash To The Past",
-    "subtitle": "A Psychological Horror Adventure",
-    "media": [
-      {
-        "id": "media-1-1",
-        "type": "image",
-        "src": "/game image/ash-house/poster.jpg",
-        "thumbnailSrc": "/game image/ash-house/poster.jpg",
-        "alt": "Ash To The Past promotional poster",
-        "imageHint": "game poster horror"
-      },
-      {
-        "id": "media-1-2",
-        "type": "image",
-        "src": "/game image/ash-house/ash mother.jpg",
-        "thumbnailSrc": "/game image/ash-house/ash mother.jpg",
-        "alt": "Scene from Ash To The Past showing Ash's mother",
-        "imageHint": "character scene eerie"
-      },
-      {
-        "id": "media-1-3",
-        "type": "video",
-        "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "thumbnailSrc": "https://placehold.co/1280x720.png/000000/FFFFFF?text=Video+Thumbnail",
-        "alt": "Ash To The Past Official Trailer",
-        "imageHint": "gameplay trailer"
-      }
-    ],
-    "itchioPageUrl": "https://your-studio.itch.io/ash-to-the-past",
-    "buyNowUrl": "https://your-studio.itch.io/ash-to-the-past/purchase",
-    "logoUrl": "/game image/ash-house/poster.jpg",
-    "description": "Delve into a chilling narrative where past traumas manifest as horrifying realities. Ash To The Past is a story-driven psychological horror game that explores themes of grief, memory, and the terrifying nature of the human psyche. Navigate eerie environments, solve cryptic puzzles, and confront the manifestations of a fractured mind. Your choices will shape Ash's journey and determine their fate in a world where reality is a fragile concept.",
-    "isFeatured": true,
-    "showInFeaturedGrid": true,
-    "shortDescription": "A mind-bending psychological horror game about confronting past traumas.",
-    "shortDescriptionUnderGallery": "Uncover the dark secrets of a tormented past in this immersive horror experience.",
-    "heroTagline": "The Past is Never Truly Dead.",
-    "genres": ["Psychological Horror", "Adventure", "Puzzle", "Story Rich"],
-    "platforms": ["PC (Windows)", "itch.io"],
-    "releaseDate": "2024-10-31T00:00:00Z",
-    "keyFeatures": [
-      "Gripping psychological horror narrative.",
-      "Atmospheric environments designed to unsettle.",
-      "Challenging puzzles integrated into the story.",
-      "Multiple endings based on player choices.",
-      "Unique visual style blending realism with surreal horror."
-    ],
-    "developerNotes": "This game was a labor of love, born from a desire to explore the darker corners of storytelling. We hope it haunts you in the best way possible.",
-    "rating": 4.7,
-    "ratingCount": 150,
-    "customTags": [
-      {
-        "text": "Single Player",
-        "icon": "Gamepad2",
-        "iconColor": "text-blue-400"
-      },
-      {
-        "text": "Mature Content",
-        "icon": "Info",
-        "iconColor": "text-red-400"
-      }
-    ],
-    "priceDetails": {
-      "currencySymbol": "$",
-      "currentPrice": "14.99",
-      "originalPrice": "19.99",
-      "discountPercentage": "25%",
-      "baseGameTag": "Base Game",
-      "saleEndDate": "Offer ends October 31st!"
+{
+  "id": "1",
+  "title": "The Ash House",
+  "subtitle": "Time-Shifting Horror Demo",
+  "media": [
+    {
+      "id": "media-1-1",
+      "type": "image",
+      "src": "/game-image/ash-house/poster.jpg",
+      "thumbnailSrc": "/game-image/ash-house/poster-thumb.jpg",
+      "alt": "The Ash House - Haunted Manor Poster",
+      "imageHint": "horror game poster"
     },
-    "tabSections": [
-      {
-        "title": "Overview",
-        "contentKey": "media_plus_description"
-      },
-      {
-        "title": "Editions & Add-ons",
-        "contentKey": "editions"
-      },
-      {
-        "title": "System Requirements",
-        "contentKey": "system_requirements_content"
-      }
-    ],
-    "editions": [
-      {
-        "id": "edition-1-standard",
-        "title": "Standard Edition",
-        "imageUrl": "https://placehold.co/400x250.png/1a1a1a/ffffff?text=Standard+Edition",
-        "imageHint": "game standard edition",
-        "items": [
-          { "id": "item-1", "text": "Base Game: Ash To The Past" }
-        ],
-        "priceDetails": {
-          "currencySymbol": "$",
-          "currentPrice": "14.99"
-        },
-        "buttonText": "Buy Standard",
-        "buttonUrl": "https://your-studio.itch.io/ash-to-the-past/purchase?edition=standard",
-        "buttonVariant": "secondary"
-      },
-      {
-        "id": "edition-1-deluxe",
-        "title": "Deluxe Edition",
-        "imageUrl": "https://placehold.co/400x250.png/333333/ffffff?text=Deluxe+Edition",
-        "imageHint": "game deluxe edition art",
-        "items": [
-          { "id": "item-deluxe-1", "text": "Base Game: Ash To The Past" },
-          { "id": "item-deluxe-2", "text": "Digital Artbook", "iconUrl": "https://placehold.co/24x24.png/555555/ffffff?text=ART", "iconHint": "artbook icon" },
-          { "id": "item-deluxe-3", "text": "Original Soundtrack", "iconUrl": "https://placehold.co/24x24.png/555555/ffffff?text=OST", "iconHint": "soundtrack icon" },
-          { "id": "item-deluxe-4", "text": "Exclusive Wallpapers", "isAction": true }
-        ],
-        "priceDetails": {
-          "currencySymbol": "$",
-          "currentPrice": "24.99",
-          "originalPrice": "29.99"
-        },
-        "buttonText": "Buy Deluxe",
-        "buttonUrl": "https://your-studio.itch.io/ash-to-the-past/purchase?edition=deluxe",
-        "buttonVariant": "default",
-        "isHighlighted": true,
-        "highlightBannerText": "Best Value!"
-      }
-    ],
-    "system_requirements_content": "Minimum:\nOS: Windows 10 (64-bit)\nProcessor: Intel Core i5-4590 / AMD FX 8350\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 970 / AMD Radeon R9 290\nDirectX: Version 11\nStorage: 20 GB available space\n\nRecommended:\nOS: Windows 11 (64-bit)\nProcessor: Intel Core i7-6700K / AMD Ryzen 5 1600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1070 / AMD Radeon RX Vega 56\nDirectX: Version 12\nStorage: 20 GB available space (SSD recommended)"
+    {
+      "id": "media-1-2",
+      "type": "image",
+      "src": "/game-image/ash-house/ash-mother.jpg",
+      "thumbnailSrc": "/game-image/ash-house/ash-mother-thumb.jpg",
+      "alt": "The Ash Mother - Supernatural Antagonist",
+      "imageHint": "enemy design"
+    },
+    {
+      "id": "media-1-3",
+      "type": "video",
+      "src": "https://www.youtube.com/embed/YOUR_TRAILER_ID",
+      "thumbnailSrc": "/game-image/ash-house/trailer-thumb.jpg",
+      "alt": "The Ash House Official Gameplay Teaser",
+      "imageHint": "horror gameplay trailer"
+    }
+  ],
+  "itchioPageUrl": "https://snowmanstudio.itch.io/the-ash-house",
+  "buyNowUrl": "https://snowmanstudio.itch.io/the-ash-house/demo",
+  "logoUrl": "/game-image/ash-house/logo.png",
+  "description": "Experience a chilling demo of The Ash House - a first-person psychological horror where time itself is broken. Play as Jude, an investigative journalist trapped in a manor that exists across three timelines. Solve inter-connected puzzles while evading the Ash Mother, an adaptive AI entity that learns from your every move.\n\nThis demo includes:\n- 30 minutes of gameplay across two timelines\n- Introduction to time-shifting mechanics\n- Two key puzzles showcasing the game's unique chronology system\n- A terrifying encounter with the Ash Mother",
+  "isFeatured": true,
+  "showInFeaturedGrid": true,
+  "shortDescription": "Demo: A time-shifting horror where the house remembers and hunts.",
+  "shortDescriptionUnderGallery": "Try the demo of our upcoming psychological horror game featuring innovative time-manipulation gameplay.",
+  "heroTagline": "The house remembers... and hunts",
+  "genres": ["Psychological Horror", "Survival Horror", "Indie"],
+  "platforms": ["PC (Windows)"],
+  "releaseDate": "2024-10-31T00:00:00Z",
+  "keyFeatures": [
+    "Time-shifting mechanics (Past/Present timelines in demo)",
+    "Self-learning AI antagonist (Ash Mother)",
+    "Environmental storytelling with Indian horror influences",
+    "Demo-exclusive puzzle content",
+    "Atmospheric sound design"
+  ],
+  "developerNotes": "From Snowman Studio: This demo showcases our innovative time-manipulation horror gameplay. The full game will include three timelines and multiple endings.",
+  "rating": 0,
+  "ratingCount": 0,
+  "customTags": [
+    {
+      "text": "Demo Version",
+      "icon": "FlaskConical",
+      "iconColor": "text-purple-400"
+    },
+    {
+      "text": "Adaptive AI",
+      "icon": "Cpu",
+      "iconColor": "text-green-400"
+    }
+  ],
+  "priceDetails": {
+    "currencySymbol": "",
+    "currentPrice": "FREE DEMO",
+    "originalPrice": "",
+    "discountPercentage": "",
+    "baseGameTag": "Demo",
+    "saleEndDate": ""
   },
-  {
-    "id": "2",
-    "title": "Echoes of the Void",
-    "subtitle": "A Sci-Fi Survival Horror",
-    "media": [
-      {
-        "id": "media-2-1",
-        "type": "image",
-        "src": "https://placehold.co/1920x1080.png/0a0f1a/7788aa?text=Echoes+of+the+Void+Title",
-        "thumbnailSrc": "https://placehold.co/640x360.png/0a0f1a/7788aa?text=Echoes+Thumb",
-        "alt": "Echoes of the Void title screen",
-        "imageHint": "sci-fi space game"
+  "tabSections": [
+    {
+      "title": "Overview",
+      "contentKey": "media_plus_description"
+    },
+    {
+      "title": "Features",
+      "contentKey": "key_features"
+    },
+    {
+      "title": "System Requirements",
+      "contentKey": "system_requirements_content"
+    }
+  ],
+  "editions": [
+    {
+      "id": "edition-1-demo",
+      "title": "Demo Version",
+      "imageUrl": "/game-image/ash-house/demo-edition.jpg",
+      "imageHint": "game demo edition",
+      "items": [
+        { "id": "item-1", "text": "The Ash House - Playable Demo" },
+        { "id": "item-2", "text": "2 Gameplay Chapters" },
+        { "id": "item-3", "text": "Time-Shifting Mechanics Preview" }
+      ],
+      "priceDetails": {
+        "currencySymbol": "",
+        "currentPrice": "FREE"
       },
-      {
-        "id": "media-2-2",
-        "type": "image",
-        "src": "https://placehold.co/1920x1080.png/1a2b3c/aabbcc?text=Spaceship+Corridor",
-        "thumbnailSrc": "https://placehold.co/640x360.png/1a2b3c/aabbcc?text=Corridor+Thumb",
-        "alt": "Dark spaceship corridor",
-        "imageHint": "spaceship interior dark"
-      }
-    ],
-    "itchioPageUrl": "https://your-studio.itch.io/echoes-of-the-void",
-    "logoUrl": "https://placehold.co/300x150.png/0a0f1a/ffffff?text=Echoes+Logo",
-    "description": "Stranded on a derelict starship, you must uncover the truth behind its crew's disappearance while evading an unknown horror lurking in the shadows. Echoes of the Void combines resource management, stealth, and intense encounters in a chilling sci-fi setting.",
-    "isFeatured": true,
-    "showInFeaturedGrid": true,
-    "shortDescription": "Survive the horrors of a derelict starship in this sci-fi nightmare.",
-    "heroTagline": "In Space, No One Hears You Weep.",
-    "genres": ["Sci-Fi Horror", "Survival", "Stealth"],
-    "platforms": ["PC (Windows)", "Steam"],
-    "releaseDate": "2025-03-15T00:00:00Z",
-    "keyFeatures": [
-      "Claustrophobic atmosphere aboard a massive, decaying starship.",
-      "Resource management and crafting for survival.",
-      "Unpredictable AI that hunts you relentlessly.",
-      "Engaging mystery and environmental storytelling."
-    ],
-    "priceDetails": {
-      "currencySymbol": "$",
-      "currentPrice": "19.99"
+      "buttonText": "Download Demo",
+      "buttonUrl": "https://snowmanstudio.itch.io/the-ash-house/demo",
+      "buttonVariant": "default",
+      "isHighlighted": true,
+      "highlightBannerText": "Available Now!"
     },
-    "tabSections": [
-      {
-        "title": "Overview",
-        "contentKey": "media_plus_description"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "title": "The Last Ritual",
-    "subtitle": "Folk Horror Investigation",
-    "media": [
-      {
-        "id": "media-3-1",
-        "type": "image",
-        "src": "https://placehold.co/1920x1080.png/3d2c1d/c0b0a0?text=The+Last+Ritual+Forest",
-        "thumbnailSrc": "https://placehold.co/640x360.png/3d2c1d/c0b0a0?text=Ritual+Forest",
-        "alt": "Mysterious forest setting for The Last Ritual",
-        "imageHint": "folk horror forest"
-      }
-    ],
-    "itchioPageUrl": "https://your-studio.itch.io/the-last-ritual",
-    "logoUrl": "https://placehold.co/300x150.png/3d2c1d/ffffff?text=Ritual+Logo",
-    "description": "Investigate a remote village plagued by a series of gruesome rituals. As an occult detective, you must gather clues, interview suspicious locals, and piece together the terrifying truth before you become the next sacrifice. The Last Ritual blends detective gameplay with chilling folk horror.",
-    "isFeatured": false,
-    "showInFeaturedGrid": true,
-    "shortDescription": "Uncover ancient terrors in a remote village steeped in dark traditions.",
-    "genres": ["Folk Horror", "Detective", "Mystery", "Indie"],
-    "platforms": ["PC (Windows)"],
-    "releaseDate": "TBA",
-    "keyFeatures": [
-      "Atmospheric investigation gameplay.",
-      "Rich lore inspired by folk tales and ancient rituals.",
-      "Non-linear story with branching paths.",
-      "Hand-drawn art style."
-    ],
-    "priceDetails": {
-      "currencySymbol": "$",
-      "currentPrice": "9.99"
-    },
-    "tabSections": [
-      {
-        "title": "Overview",
-        "contentKey": "media_plus_description"
-      }
-    ]
-  }
-]
-
-    
+    {
+      "id": "edition-1-full",
+      "title": "Coming Soon: Full Game",
+      "imageUrl": "/game-image/ash-house/full-game-edition.jpg",
+      "imageHint": "full game coming soon",
+      "items": [
+        { "id": "item-full-1", "text": "Full Game (Release: Oct 2025)" },
+        { "id": "item-full-2", "text": "Three Interactive Timelines" },
+        { "id": "item-full-3", "text": "Multiple Endings" },
+        { "id": "item-full-4", "text": "Complete Ash Mother AI System" }
+      ],
+      "priceDetails": {
+        "currencySymbol": "\u20B9",
+        "currentPrice": "Wishlist Now"
+      },
+      "buttonText": "Wishlist on Epic",
+      "buttonUrl": "https://store.epicgames.com/p/the-ash-house",
+      "buttonVariant": "secondary"
+    }
+  ],
+  "system_requirements_content": "DEMO REQUIREMENTS:\nMinimum:\nOS: Windows 10 (64-bit)\nProcessor: Intel Core i5-4460 / AMD FX-8350\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 960 / AMD Radeon R9 280\nStorage: 5 GB available space\n\nRecommended:\nOS: Windows 10/11 (64-bit)\nProcessor: Intel Core i7-6700 / AMD Ryzen 5 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA GTX 1060 / AMD RX 580\nStorage: 5 GB SSD space"
+}
