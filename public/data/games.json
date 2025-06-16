@@ -1,227 +1,161 @@
 
 [
   {
-    "id": "arctic-adventure",
-    "title": "Arctic Adventure",
-    "subtitle": "Deluxe Edition",
+    "id": "1",
+    "title": "Ash To The Past",
+    "subtitle": "A Descent into Madness",
     "media": [
       {
-        "id": "yt-trailer",
-        "type": "video",
-        "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "thumbnailSrc": "https://placehold.co/800x450.png",
-        "alt": "Arctic Adventure Gameplay Trailer",
-        "imageHint": "gameplay trailer"
-      },
-      {
-        "id": "screenshot1",
+        "id": "ash-poster",
         "type": "image",
-        "src": "https://placehold.co/1280x720.png",
-        "thumbnailSrc": "https://placehold.co/200x112.png",
-        "alt": "Arctic explorer overlooking a vast icy landscape",
-        "imageHint": "icy landscape game"
+        "src": "/game image/ash-house/poster.jpg",
+        "thumbnailSrc": "/game image/ash-house/poster.jpg",
+        "alt": "Ash To The Past game poster",
+        "imageHint": "game poster"
       },
       {
-        "id": "screenshot2",
+        "id": "ash-mother",
         "type": "image",
-        "src": "https://placehold.co/1280x720.png",
-        "thumbnailSrc": "https://placehold.co/200x112.png",
-        "alt": "Close-up of a character in snow gear",
-        "imageHint": "character snow gear"
-      },
-      {
-        "id": "screenshot3",
-        "type": "image",
-        "src": "https://placehold.co/1280x720.png",
-        "thumbnailSrc": "https://placehold.co/200x112.png",
-        "alt": "Encountering a polar bear",
-        "imageHint": "polar bear encounter"
-      },
-      {
-        "id": "itch-embed",
-        "type": "embed",
-        "src": "https://itch.io/embed-upload/10015420?color=333333",
-        "thumbnailSrc": "https://placehold.co/200x112.png",
-        "alt": "Play Arctic Adventure Demo",
-        "imageHint": "gameplay demo"
+        "src": "/game image/ash-house/ash mother.jpg",
+        "thumbnailSrc": "/game image/ash-house/ash mother.jpg",
+        "alt": "Scene from Ash To The Past featuring a character",
+        "imageHint": "character mother"
       }
     ],
-    "logoUrl": "https://placehold.co/300x150.png?text=Arctic+Logo",
-    "shortDescriptionUnderGallery": "Survive the harsh beauty of the Arctic. Explore vast, frozen landscapes, uncover ancient mysteries, and battle the elements in this thrilling adventure game. Every choice matters in your quest for survival.",
-    "description": "Arctic Adventure is a single-player survival and exploration game set in the unforgiving yet beautiful Arctic wilderness. Players take on the role of a stranded explorer who must use their wits and skills to survive against the cold, hunger, and dangerous wildlife.\n\nKey Features:\n- Vast open-world environment to explore, filled with hidden caves, ancient ruins, and breathtaking vistas.\n- Dynamic weather system that impacts gameplay and survival strategies.\n- Crafting system: Create tools, shelter, clothing, and weapons from resources found in the environment.\n- Wildlife: Encounter a variety of Arctic animals, some helpful, others a threat.\n- Engaging storyline with mysteries to unravel about the land and its past inhabitants.\n\nWill you conquer the Arctic, or will it claim you?",
+    "itchioPageUrl": "https://snowmanstudio.itch.io/ash-to-the-past",
+    "buyNowUrl": "https://snowmanstudio.itch.io/ash-to-the-past",
+    "logoUrl": "/game image/ash-house/poster.jpg",
+    "description": "Delve into a chilling narrative set in an ancestral home filled with dark secrets and psychological horror. Piece together the past and confront the shadows that lurk within. Ash To The Past is a first-person horror adventure that will test your sanity.",
     "isFeatured": true,
     "showInFeaturedGrid": true,
-    "heroTagline": "Conquer the Frozen Wilds",
-    "itchioPageUrl": "https://thesnowman.itch.io/arctic-adventure",
-    "buyNowUrl": "https://thesnowman.itch.io/arctic-adventure",
-    "genres": ["Adventure", "Survival", "Open World", "Indie"],
-    "platforms": ["PC", "Mac", "Linux"],
-    "releaseDate": "2024-03-15",
+    "shortDescription": "Psychological horror in an ancestral home. Uncover dark secrets.",
+    "shortDescriptionUnderGallery": "A first-person horror adventure where you uncover the haunting secrets of your ancestral home. Every shadow hides a story, every creak could be your last.",
+    "heroTagline": "Uncover the haunting secrets of your ancestral home.",
+    "genres": ["Psychological Horror", "Adventure", "Indie"],
+    "platforms": ["PC", "Mac"],
+    "releaseDate": "2024-10-31",
     "keyFeatures": [
-      "Expansive open-world Arctic environment.",
-      "Dynamic weather and day/night cycle.",
-      "Deep crafting and survival mechanics.",
-      "Engaging narrative with multiple endings.",
-      "Challenging wildlife encounters."
+      "Atmospheric exploration and puzzle-solving.",
+      "Deep narrative with multiple layers.",
+      "Immersive sound design enhancing the horror.",
+      "Unique sanity mechanics."
     ],
+    "developerNotes": "This game is a passion project aiming to deliver a truly unsettling experience, inspired by classic horror and Indian folklore.",
     "rating": 4.7,
-    "ratingCount": 245,
+    "ratingCount": 150,
     "customTags": [
-      { "text": "Single Player", "icon": "User", "iconColor": "text-blue-400" },
-      { "text": "Atmospheric", "icon": "Wind", "iconColor": "text-sky-400" },
-      { "text": "Rich Story", "icon": "BookOpen", "iconColor": "text-amber-400" }
+      { "text": "Single Player", "icon": "Gamepad2" },
+      { "text": "Story Rich", "icon": "ListChecks" }
     ],
     "priceDetails": {
-      "currencySymbol": "\u20B9",
-      "currentPrice": "499",
-      "originalPrice": "999",
-      "discountPercentage": "50%",
-      "baseGameTag": "Base Game",
-      "saleEndDate": "Sale ends March 31st"
+      "currencySymbol": "",
+      "currentPrice": "Comming Soon",
+      "originalPrice": "",
+      "discountPercentage": "",
+      "baseGameTag": "Demo",
+      "saleEndDate": ""
     },
     "tabSections": [
       { "title": "Overview", "contentKey": "media_plus_description" },
-      { "title": "Add-Ons", "contentKey": "editions_section" }
+      { "title": "Add-Ons", "contentKey": "editions" }
     ],
     "editions": [
       {
-        "id": "standard",
-        "title": "Standard Edition",
-        "imageUrl": "https://placehold.co/400x250.png?text=Standard",
-        "imageHint": "standard edition art",
+        "id": "Base Game",
+        "title": "Base Game",
+        "imageUrl": "https://placehold.co/400x250.png/1a202c/e53e3e?text=Deluxe+Edition",
+        "imageHint": "deluxe edition",
         "items": [
-          { "id": "base", "text": "Arctic Adventure - Base Game" }
+          { "id": "item-base-game", "text": "Ash To The Past - Base Game", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=G", "iconHint": "gamepad icon" },
+          { "id": "item-soundtrack", "text": "Original Soundtrack", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=M", "iconHint": "music icon" },
+          { "id": "item-artbook", "text": "Digital Artbook", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=B", "iconHint": "book icon" }
         ],
-        "priceDetails": { "currencySymbol": "\u20B9", "currentPrice": "499" },
-        "buttonText": "Buy Now",
-        "buttonUrl": "https://thesnowman.itch.io/arctic-adventure"
-      },
-      {
-        "id": "deluxe",
-        "title": "Deluxe Edition",
-        "imageUrl": "https://placehold.co/400x250.png?text=Deluxe",
-        "imageHint": "deluxe edition art",
-        "items": [
-          { "id": "base-deluxe", "text": "Arctic Adventure - Base Game" },
-          { "id": "soundtrack", "text": "Digital Soundtrack", "iconUrl": "https://placehold.co/24x24.png?text=MP3", "iconHint": "music icon"},
-          { "id": "artbook", "text": "Digital Artbook", "iconUrl": "https://placehold.co/24x24.png?text=PDF", "iconHint": "book icon" }
-        ],
-        "priceDetails": { "currencySymbol": "\u20B9", "currentPrice": "799", "originalPrice": "1199" },
-        "buttonText": "Buy Deluxe",
-        "buttonUrl": "https://thesnowman.itch.io/arctic-adventure-deluxe"
-      },
-      {
-        "id": "explorers_pack",
-        "title": "Explorer's Pack",
-        "imageUrl": "https://placehold.co/400x250.png?text=Explorer",
-        "imageHint": "explorers pack art",
-        "items": [
-          { "id": "outfit", "text": "Exclusive In-Game Outfit", "iconUrl": "https://placehold.co/24x24.png?text=HAT", "iconHint": "clothing icon"},
-          { "id": "weapon_skin", "text": "Unique Weapon Skin Set", "iconUrl": "https://placehold.co/24x24.png?text=GUN", "iconHint": "weapon icon"}
-        ],
-        "priceDetails": { "currencySymbol": "\u20B9", "currentPrice": "249" },
-        "buttonText": "Get Pack",
-        "buttonUrl": "https://thesnowman.itch.io/arctic-adventure-explorers"
-      },
-      {
-        "id": "frostbyte_plus",
-        "title": "FrostByte+ Access",
-        "imageUrl": "https://placehold.co/400x250.png?text=FrostByte+",
-        "imageHint": "subscription service art",
+        "priceDetails": { "currencySymbol": "$", "currentPrice": "24.99", "originalPrice": "29.99" },
+        "buttonText": "Get Deluxe",
+        "buttonUrl": "https://snowmanstudio.itch.io/ash-to-the-past-deluxe",
+        "buttonVariant": "premium",
         "isHighlighted": true,
-        "highlightBannerText": "INCLUDED WITH FROSTBYTE+",
-        "items": [
-          { "id": "deluxe-highlight", "text": "Arctic Adventure - Deluxe Edition", "iconUrl": "https://placehold.co/24x24.png?text=D", "iconHint": "game icon" },
-          { "id": "catalog", "text": "100+ PC Games", "isAction": true },
-          { "id": "new_releases", "text": "New releases on day one", "isAction": true }
-        ],
-        "priceDetails": { "currencySymbol": "\u20B9", "currentPrice": "599", "period": "/month" },
-        "buttonText": "JOIN NOW",
-        "buttonUrl": "https://example.com/frostbyte-plus",
-        "buttonVariant": "premium"
+        "highlightBannerText": "Best Value"
       }
     ]
   },
   {
-    "id": "frostfall-chronicles",
-    "title": "Frostfall Chronicles",
-    "media": [{
-      "id": "main",
-      "type": "image",
-      "src": "https://placehold.co/400x300.png",
-      "thumbnailSrc": "https://placehold.co/400x300.png",
-      "alt": "Frostfall Chronicles Cover Art",
-      "imageHint": "fantasy winter"
-    }],
-    "itchioPageUrl": "https://yourusername.itch.io/frostfall-chronicles",
-    "description": "Embark on an epic journey through a land cloaked in eternal winter. As the chosen hero, you must unravel the secrets of the Frostfall and restore balance to the realm. Features turn-based combat, a deep class system, and a branching narrative.",
-    "shortDescription": "An epic RPG set in a frozen world, with turn-based combat and a rich story.",
+    "id": "2",
+    "title": "Project Snowball",
+    "subtitle": "Winter's Bite",
+    "media": [
+      {
+        "id": "m2-1",
+        "type": "image",
+        "src": "https://placehold.co/800x450.png/1a202c/ffffff?text=Project+Snowball+Screenshot",
+        "thumbnailSrc": "https://placehold.co/400x225.png/1a202c/ffffff?text=Snowball+Thumb",
+        "alt": "Project Snowball - Gameplay Screenshot",
+        "imageHint": "winter survival"
+      },
+      {
+        "id": "m2-2",
+        "type": "video",
+        "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "thumbnailSrc": "https://placehold.co/400x225.png/1a202c/e53e3e?text=Snowball+Trailer",
+        "alt": "Project Snowball - Official Trailer",
+        "imageHint": "game trailer"
+      }
+    ],
+    "itchioPageUrl": "https://snowmanstudio.itch.io/project-snowball",
+    "logoUrl": "https://placehold.co/300x150.png?text=Snowball+Logo",
+    "description": "A survival horror game set in a desolate, frozen wasteland. Scavenge for resources, fight off terrifying creatures, and uncover the mystery behind the eternal winter. Project Snowball blends resource management with intense horror sequences.",
     "isFeatured": true,
     "showInFeaturedGrid": true,
-    "heroTagline": "Unravel the Frozen Prophecy",
-    "genres": ["RPG", "Turn-Based Strategy", "Fantasy"],
-    "platforms": ["PC", "Mac"],
-    "releaseDate": "2024-11-20"
-  },
-  {
-    "id": "crystal-caverns",
-    "title": "Crystal Caverns",
-    "media": [{
-      "id": "main",
-      "type": "image",
-      "src": "https://placehold.co/400x300.png",
-      "thumbnailSrc": "https://placehold.co/400x300.png",
-      "alt": "Crystal Caverns Gameplay",
-      "imageHint": "crystal cave puzzle"
-    }],
-    "itchioPageUrl": "https://yourusername.itch.io/crystal-caverns",
-    "description": "Delve into the shimmering depths of the Crystal Caverns in this challenging puzzle-platformer. Manipulate light and reflections to overcome obstacles and uncover the secrets hidden within the earth. Each level introduces new mechanics and mind-bending puzzles.",
-    "shortDescription": "A puzzle-platformer where you manipulate light to solve intricate challenges.",
-    "isFeatured": true,
-    "showInFeaturedGrid": true,
-    "heroTagline": "Reflect. Solve. Ascend.",
-    "genres": ["Puzzle", "Platformer", "Indie"],
-    "platforms": ["PC", "Web"],
-    "releaseDate": "2023-07-01"
-  },
-  {
-    "id": "starship-odyssey",
-    "title": "Starship Odyssey",
-    "media": [{
-      "id": "main",
-      "type": "image",
-      "src": "https://placehold.co/400x300.png",
-      "thumbnailSrc": "https://placehold.co/400x300.png",
-      "alt": "Starship Odyssey Space Battle",
-      "imageHint": "space battle spaceship"
-    }],
-    "itchioPageUrl": "https://yourusername.itch.io/starship-odyssey",
-    "description": "Command your own starship and explore a vast, procedurally generated galaxy in this space exploration and trading game. Upgrade your ship, hire a crew, engage in thrilling dogfights, and chart unknown systems. The universe is yours to discover.",
-    "shortDescription": "Explore a vast galaxy, trade, fight, and upgrade your starship.",
-    "isFeatured": false,
-    "showInFeaturedGrid": true,
-    "genres": ["Space Sim", "Exploration", "Trading", "Sci-Fi"],
+    "shortDescription": "Survival horror in a frozen wasteland. Scavenge and fight to survive.",
+    "heroTagline": "Can you survive the endless winter?",
+    "genres": ["Survival Horror", "Open World", "Crafting"],
     "platforms": ["PC"],
-    "releaseDate": "2025-02-10"
+    "releaseDate": "2025-01-15",
+     "keyFeatures": [
+      "Dynamic weather system impacting gameplay.",
+      "Extensive crafting and base-building mechanics.",
+      "Challenging enemy AI that adapts to player actions.",
+      "A vast, explorable frozen world."
+    ],
+    "rating": 4.2,
+    "ratingCount": 95,
+     "priceDetails": {
+      "currencySymbol": "",
+      "currentPrice": "Comming Soon"
+    },
+    "tabSections": [
+      { "title": "Overview", "contentKey": "media_plus_description" }
+    ]
   },
   {
-    "id": "garden-gnomes-tale",
-    "title": "Garden Gnome's Tale",
-    "media": [{
-      "id": "main",
-      "type": "image",
-      "src": "https://placehold.co/400x300.png",
-      "thumbnailSrc": "https://placehold.co/400x300.png",
-      "alt": "Garden Gnome's Tale Character",
-      "imageHint": "garden gnome adventure"
-    }],
-    "itchioPageUrl": "https://yourusername.itch.io/garden-gnomes-tale",
-    "description": "A charming and whimsical adventure game where you play as a brave garden gnome. Explore a magical garden, solve puzzles, befriend quirky creatures, and protect your home from mischievous sprites. A heartwarming story for all ages.",
-    "shortDescription": "A charming adventure game about a brave garden gnome.",
+    "id": "3",
+    "title": "VHS Nightmares",
+    "subtitle": "Rewind Your Fears",
+    "media": [
+      {
+        "id": "m3-1",
+        "type": "image",
+        "src": "https://placehold.co/800x450.png/4a5568/ffffff?text=VHS+Nightmares+Screenshot",
+        "thumbnailSrc": "https://placehold.co/400x225.png/4a5568/ffffff?text=VHS+Thumb",
+        "alt": "VHS Nightmares - Retro Horror Scene",
+        "imageHint": "retro vhs"
+      }
+    ],
+    "itchioPageUrl": "https://snowmanstudio.itch.io/vhs-nightmares",
+    "description": "Experience horror through the lens of a cursed VHS tape. Each viewing plunges you deeper into a distorted reality where the lines between the game and your world blur. This game features a unique glitch aesthetic and meta-narrative.",
     "isFeatured": false,
     "showInFeaturedGrid": true,
-    "genres": ["Adventure", "Family-Friendly", "Puzzle"],
-    "platforms": ["PC", "Mac", "Web"],
-    "releaseDate": "2023-09-15"
+    "shortDescription": "Cursed VHS tape horror with glitch aesthetics and meta-narrative.",
+    "heroTagline": "Don't just play the game. Let it play you.",
+    "genres": ["Experimental Horror", "Puzzle", "Meta"],
+    "platforms": ["PC"],
+    "releaseDate": "TBA",
+    "priceDetails": {
+      "currencySymbol": "$",
+      "currentPrice": "9.99"
+    },
+    "tabSections": [
+      { "title": "Overview", "contentKey": "media_plus_description" }
+    ]
   }
 ]
