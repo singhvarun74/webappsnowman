@@ -17,7 +17,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   { id: '1', name: 'Sensuki', role: 'Founder/Lead Developer', imageUrl: '/about image/sensuki.jpg', imageHint: 'portrait developer', instagramUrl: 'https://www.instagram.com/thesnowmanstudio/' },
   { id: '2', name: 'Varun', role: 'Art Director', imageUrl: '/about image/varun.jpg', imageHint: 'portrait artist', instagramUrl: 'https://www.instagram.com/thesnowmanstudio/' },
-  { id: '3', name: 'Vinayak', role: '3D Artist', imageUrl: '/about image/Vinayak.jpg', imageHint: 'portrait developer', instagramUrl: 'https://www.instagram.com/thesnowmanstudio/' },
+  { id: '3', name: 'Vinayak', role: '3D Artist', imageUrl: '/about image/vinayak.jpg', imageHint: 'portrait developer', instagramUrl: 'https://www.instagram.com/thesnowmanstudio/' },
 ];
 
 export default function AboutPage() {
