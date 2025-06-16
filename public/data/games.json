@@ -1,161 +1,152 @@
-
-[
-  {
-    "id": "1",
-    "title": "Ash To The Past",
-    "subtitle": "A Descent into Madness",
-    "media": [
-      {
-        "id": "ash-poster",
-        "type": "image",
-        "src": "/game image/ash-house/poster.jpg",
-        "thumbnailSrc": "/game image/ash-house/poster.jpg",
-        "alt": "Ash To The Past game poster",
-        "imageHint": "game poster"
-      },
-      {
-        "id": "ash-mother",
-        "type": "image",
-        "src": "/game image/ash-house/ash mother.jpg",
-        "thumbnailSrc": "/game image/ash-house/ash mother.jpg",
-        "alt": "Scene from Ash To The Past featuring a character",
-        "imageHint": "character mother"
-      }
-    ],
-    "itchioPageUrl": "https://snowmanstudio.itch.io/ash-to-the-past",
-    "buyNowUrl": "https://snowmanstudio.itch.io/ash-to-the-past",
-    "logoUrl": "/game image/ash-house/poster.jpg",
-    "description": "Delve into a chilling narrative set in an ancestral home filled with dark secrets and psychological horror. Piece together the past and confront the shadows that lurk within. Ash To The Past is a first-person horror adventure that will test your sanity.",
-    "isFeatured": true,
-    "showInFeaturedGrid": true,
-    "shortDescription": "Psychological horror in an ancestral home. Uncover dark secrets.",
-    "shortDescriptionUnderGallery": "A first-person horror adventure where you uncover the haunting secrets of your ancestral home. Every shadow hides a story, every creak could be your last.",
-    "heroTagline": "Uncover the haunting secrets of your ancestral home.",
-    "genres": ["Psychological Horror", "Adventure", "Indie"],
-    "platforms": ["PC", "Mac"],
-    "releaseDate": "2024-10-31",
-    "keyFeatures": [
-      "Atmospheric exploration and puzzle-solving.",
-      "Deep narrative with multiple layers.",
-      "Immersive sound design enhancing the horror.",
-      "Unique sanity mechanics."
-    ],
-    "developerNotes": "This game is a passion project aiming to deliver a truly unsettling experience, inspired by classic horror and Indian folklore.",
-    "rating": 4.7,
-    "ratingCount": 150,
-    "customTags": [
-      { "text": "Single Player", "icon": "Gamepad2" },
-      { "text": "Story Rich", "icon": "ListChecks" }
-    ],
-    "priceDetails": {
-      "currencySymbol": "",
-      "currentPrice": "Comming Soon",
-      "originalPrice": "",
-      "discountPercentage": "",
-      "baseGameTag": "Demo",
-      "saleEndDate": ""
+{
+  "id": "the-ash-house",
+  "title": "The Ash House",
+  "subtitle": "Demo",
+  "media": [
+    {
+      "id": "ash-poster",
+      "type": "image",
+      "src": "/game-image/ash-house/poster.jpg",
+      "thumbnailSrc": "/game-image/ash-house/poster-thumb.jpg",
+      "alt": "The Ash House - Horror Game Poster",
+      "imageHint": "main poster"
     },
-    "tabSections": [
-      { "title": "Overview", "contentKey": "media_plus_description" },
-      { "title": "Add-Ons", "contentKey": "editions" }
-    ],
-    "editions": [
-      {
-        "id": "Base Game",
-        "title": "Base Game",
-        "imageUrl": "https://placehold.co/400x250.png/1a202c/e53e3e?text=Deluxe+Edition",
-        "imageHint": "deluxe edition",
-        "items": [
-          { "id": "item-base-game", "text": "Ash To The Past - Base Game", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=G", "iconHint": "gamepad icon" },
-          { "id": "item-soundtrack", "text": "Original Soundtrack", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=M", "iconHint": "music icon" },
-          { "id": "item-artbook", "text": "Digital Artbook", "iconUrl": "https://placehold.co/24x24.png/ffffff/000000?text=B", "iconHint": "book icon" }
-        ],
-        "priceDetails": { "currencySymbol": "$", "currentPrice": "24.99", "originalPrice": "29.99" },
-        "buttonText": "Get Deluxe",
-        "buttonUrl": "https://snowmanstudio.itch.io/ash-to-the-past-deluxe",
-        "buttonVariant": "premium",
-        "isHighlighted": true,
-        "highlightBannerText": "Best Value"
-      }
-    ]
+    {
+      "id": "ash-mother",
+      "type": "image",
+      "src": "/game-image/ash-house/ash-mother.jpg",
+      "thumbnailSrc": "/game-image/ash-house/ash-mother-thumb.jpg",
+      "alt": "The Ash Mother antagonist",
+      "imageHint": "enemy design"
+    },
+    {
+      "id": "timeline-shift",
+      "type": "image",
+      "src": "/game-image/ash-house/timeline-shift.jpg",
+      "thumbnailSrc": "/game-image/ash-house/timeline-shift-thumb.jpg",
+      "alt": "Time shifting gameplay mechanic",
+      "imageHint": "gameplay feature"
+    }
+  ],
+  "itchioPageUrl": "https://snowmanstudio.itch.io/the-ash-house",
+  "buyNowUrl": "https://snowmanstudio.itch.io/the-ash-house",
+  "logoUrl": "/game-image/ash-house/logo.png",
+  "description": "You are Jude, an investigative journalist trapped in the Ash House - a manor where time shattered during a forbidden ritual. Shift between three timelines (Past, Present, and Fractured Future) to solve inter-connected puzzles while evading the Ash Mother, an adaptive AI entity that learns from your every move.\n\nKey Features:\n- Triple-Timeline Gameplay: Alter the past to change the present and future\n- Self-Learning Antagonist: The Ash Mother evolves with your playstyle\n- Psychological Horror: Mind-bending puzzles and environmental storytelling\n- Indian Horror Roots: Inspired by regional folklore and myths\n- Multiple Endings: Your choices determine Jude's fate",
+  "isFeatured": true,
+  "showInFeaturedGrid": true,
+  "shortDescription": "A first-person horror where the house remembers - and hunts.",
+  "shortDescriptionUnderGallery": "Survive the Ash House - a time-shifting nightmare with an AI that learns from your fear.",
+  "heroTagline": "The house remembers... and hunts",
+  "genres": ["Psychological Horror", "Survival Horror", "Indie"],
+  "platforms": ["PC"],
+  "releaseDate": "2025-10-31",
+  "keyFeatures": [
+    "Time-shifting mechanics across three distinct timelines",
+    "Self-learning AI antagonist (Ash Mother)",
+    "Lore-rich environment with deep narrative connections",
+    "Permadeath and Rage Mode options",
+    "Indian folklore-inspired horror"
+  ],
+  "developerNotes": "From Snowman Studio: Our passion project blending psychological horror with innovative time-manipulation gameplay. Inspired by Indian folklore and classic survival horror.",
+  "rating": 0,
+  "ratingCount": 0,
+  "customTags": [
+    { "text": "Single Player", "icon": "User" },
+    { "text": "Adaptive AI", "icon": "Cpu" },
+    { "text": "Time Manipulation", "icon": "Clock" }
+  ],
+  "priceDetails": {
+    "currencySymbol": "\u20B9",
+    "currentPrice": "Coming Soon",
+    "originalPrice": "",
+    "discountPercentage": "",
+    "baseGameTag": "Demo Available",
+    "saleEndDate": ""
   },
-  {
-    "id": "2",
-    "title": "Project Snowball",
-    "subtitle": "Winter's Bite",
-    "media": [
-      {
-        "id": "m2-1",
-        "type": "image",
-        "src": "https://placehold.co/800x450.png/1a202c/ffffff?text=Project+Snowball+Screenshot",
-        "thumbnailSrc": "https://placehold.co/400x225.png/1a202c/ffffff?text=Snowball+Thumb",
-        "alt": "Project Snowball - Gameplay Screenshot",
-        "imageHint": "winter survival"
-      },
-      {
-        "id": "m2-2",
-        "type": "video",
-        "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "thumbnailSrc": "https://placehold.co/400x225.png/1a202c/e53e3e?text=Snowball+Trailer",
-        "alt": "Project Snowball - Official Trailer",
-        "imageHint": "game trailer"
-      }
-    ],
-    "itchioPageUrl": "https://snowmanstudio.itch.io/project-snowball",
-    "logoUrl": "https://placehold.co/300x150.png?text=Snowball+Logo",
-    "description": "A survival horror game set in a desolate, frozen wasteland. Scavenge for resources, fight off terrifying creatures, and uncover the mystery behind the eternal winter. Project Snowball blends resource management with intense horror sequences.",
-    "isFeatured": true,
-    "showInFeaturedGrid": true,
-    "shortDescription": "Survival horror in a frozen wasteland. Scavenge and fight to survive.",
-    "heroTagline": "Can you survive the endless winter?",
-    "genres": ["Survival Horror", "Open World", "Crafting"],
-    "platforms": ["PC"],
-    "releaseDate": "2025-01-15",
-     "keyFeatures": [
-      "Dynamic weather system impacting gameplay.",
-      "Extensive crafting and base-building mechanics.",
-      "Challenging enemy AI that adapts to player actions.",
-      "A vast, explorable frozen world."
-    ],
-    "rating": 4.2,
-    "ratingCount": 95,
-     "priceDetails": {
-      "currencySymbol": "",
-      "currentPrice": "Comming Soon"
+  "tabSections": [
+    { "title": "Overview", "contentKey": "media_plus_description" },
+    { "title": "Timelines", "contentKey": "timeline_info" },
+    { "title": "Features", "contentKey": "key_features" }
+  ],
+  "additionalSections": {
+    "timeline_info": {
+      "title": "The Three Timelines",
+      "items": [
+        {
+          "title": "The Past (1950s)",
+          "content": "When the Ash House was active with cult rituals. Solve puzzles in this era to alter the present.",
+          "imageUrl": "/game-image/ash-house/past-timeline.jpg"
+        },
+        {
+          "title": "The Present (1990s)",
+          "content": "The abandoned house where you begin your investigation. Boarded up and decaying.",
+          "imageUrl": "/game-image/ash-house/present-timeline.jpg"
+        },
+        {
+          "title": "Fractured Future",
+          "content": "Reality is warped - hallways loop, gravity shifts, and the Ash Mother is at full power.",
+          "imageUrl": "/game-image/ash-house/future-timeline.jpg"
+        }
+      ]
     },
-    "tabSections": [
-      { "title": "Overview", "contentKey": "media_plus_description" }
-    ]
+    "key_features": {
+      "title": "Core Gameplay Features",
+      "items": [
+        {
+          "title": "Adaptive AI Antagonist",
+          "content": "The Ash Mother learns from your hiding spots and strategies, becoming more dangerous over time."
+        },
+        {
+          "title": "Time-Shifting Puzzles",
+          "content": "Actions in one timeline permanently affect others. Burn a diary in the Past to open a path in the Present."
+        },
+        {
+          "title": "Sanity Mechanics",
+          "content": "Extended exposure to the Fractured Future timeline causes visual and auditory hallucinations."
+        }
+      ]
+    }
   },
-  {
-    "id": "3",
-    "title": "VHS Nightmares",
-    "subtitle": "Rewind Your Fears",
-    "media": [
-      {
-        "id": "m3-1",
-        "type": "image",
-        "src": "https://placehold.co/800x450.png/4a5568/ffffff?text=VHS+Nightmares+Screenshot",
-        "thumbnailSrc": "https://placehold.co/400x225.png/4a5568/ffffff?text=VHS+Thumb",
-        "alt": "VHS Nightmares - Retro Horror Scene",
-        "imageHint": "retro vhs"
-      }
-    ],
-    "itchioPageUrl": "https://snowmanstudio.itch.io/vhs-nightmares",
-    "description": "Experience horror through the lens of a cursed VHS tape. Each viewing plunges you deeper into a distorted reality where the lines between the game and your world blur. This game features a unique glitch aesthetic and meta-narrative.",
-    "isFeatured": false,
-    "showInFeaturedGrid": true,
-    "shortDescription": "Cursed VHS tape horror with glitch aesthetics and meta-narrative.",
-    "heroTagline": "Don't just play the game. Let it play you.",
-    "genres": ["Experimental Horror", "Puzzle", "Meta"],
-    "platforms": ["PC"],
-    "releaseDate": "TBA",
-    "priceDetails": {
-      "currencySymbol": "$",
-      "currentPrice": "9.99"
+  "editions": [
+    {
+      "id": "standard",
+      "title": "Standard Edition",
+      "imageUrl": "/game-image/ash-house/standard-edition.jpg",
+      "imageHint": "standard edition cover",
+      "items": [
+        { "id": "base-game", "text": "The Ash House - Full Game" }
+      ],
+      "priceDetails": { 
+        "currencySymbol": "\u20B9", 
+        "currentPrice": "1499", 
+        "originalPrice": "1799",
+        "discountPercentage": "15%"
+      },
+      "buttonText": "Wishlist Now",
+      "buttonUrl": "https://store.epicgames.com/p/the-ash-house"
     },
-    "tabSections": [
-      { "title": "Overview", "contentKey": "media_plus_description" }
-    ]
-  }
-]
+    {
+      "id": "deluxe",
+      "title": "Deluxe Edition",
+      "imageUrl": "/game-image/ash-house/deluxe-edition.jpg",
+      "imageHint": "deluxe edition cover",
+      "items": [
+        { "id": "base-deluxe", "text": "The Ash House - Full Game" },
+        { "id": "soundtrack", "text": "Digital Soundtrack" },
+        { "id": "artbook", "text": "Digital Artbook (100+ pages)" },
+        { "id": "making-of", "text": "Behind-the-Scenes Documentary" },
+        { "id": "concept-art", "text": "Exclusive Concept Art Pack" }
+      ],
+      "priceDetails": { 
+        "currencySymbol": "\u20B9", 
+        "currentPrice": "1999", 
+        "originalPrice": "2499",
+        "discountPercentage": "20%"
+      },
+      "buttonText": "Wishlist Deluxe",
+      "buttonUrl": "https://store.epicgames.com/p/the-ash-house-deluxe",
+      "isHighlighted": true,
+      "highlightBannerText": "Best Value"
+    }
+  ]
+}
